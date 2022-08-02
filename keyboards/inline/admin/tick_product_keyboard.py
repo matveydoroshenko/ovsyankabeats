@@ -1,0 +1,522 @@
+import keyboards.inline.admin.product_keyboard as btn
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+
+photo_tick_button = InlineKeyboardButton(text="Фото ✅", callback_data="product_photo_tick")
+video_tick_button = InlineKeyboardButton(text="Видео ✅", callback_data="product_video_tick")
+file_tick_button = InlineKeyboardButton(text="Файл ✅", callback_data="product_file_tick")
+title_tick_button = InlineKeyboardButton(text="Название ✅", callback_data="product_title_tick")
+description_tick_button = InlineKeyboardButton(text="Описание ✅", callback_data="product_description_tick")
+price_tick_button = InlineKeyboardButton(text="Цена ✅", callback_data="product_price_tick")
+
+tick_photo_keyboard = InlineKeyboardMarkup()
+
+tick_photo_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_keyboard.row(btn.save_button)
+tick_photo_keyboard.row(btn.back_button)
+
+tick_video_keyboard = InlineKeyboardMarkup()
+
+tick_video_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_keyboard.row(btn.description_button, btn.file_button)
+tick_video_keyboard.row(btn.title_button, btn.price_button)
+tick_video_keyboard.row(btn.save_button)
+tick_video_keyboard.row(btn.back_button)
+
+tick_file_keyboard = InlineKeyboardMarkup()
+
+tick_file_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_keyboard.row(btn.description_button, file_tick_button)
+tick_file_keyboard.row(btn.title_button, btn.price_button)
+tick_file_keyboard.row(btn.save_button)
+tick_file_keyboard.row(btn.back_button)
+
+tick_title_keyboard = InlineKeyboardMarkup()
+
+tick_title_keyboard.row(btn.photo_button, btn.video_button)
+tick_title_keyboard.row(btn.description_button, btn.file_button)
+tick_title_keyboard.row(title_tick_button, btn.price_button)
+tick_title_keyboard.row(btn.save_button)
+tick_title_keyboard.row(btn.back_button)
+
+tick_description_keyboard = InlineKeyboardMarkup()
+
+tick_description_keyboard.row(btn.photo_button, btn.video_button)
+tick_description_keyboard.row(description_tick_button, btn.file_button)
+tick_description_keyboard.row(btn.title_button, btn.price_button)
+tick_description_keyboard.row(btn.save_button)
+tick_description_keyboard.row(btn.back_button)
+
+tick_price_keyboard = InlineKeyboardMarkup()
+
+tick_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_price_keyboard.row(btn.description_button, btn.file_button)
+tick_price_keyboard.row(btn.title_button, price_tick_button)
+tick_price_keyboard.row(btn.save_button)
+tick_price_keyboard.row(btn.back_button)
+
+tick_photo_video_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_video_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_video_keyboard.row(btn.save_button)
+tick_photo_video_keyboard.row(btn.back_button)
+
+tick_photo_file_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_file_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_file_keyboard.row(btn.save_button)
+tick_photo_file_keyboard.row(btn.back_button)
+
+tick_photo_description_keyboard = InlineKeyboardMarkup()
+
+tick_photo_description_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_description_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_description_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_description_keyboard.row(btn.save_button)
+tick_photo_description_keyboard.row(btn.back_button)
+
+tick_photo_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_title_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_title_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_title_keyboard.row(btn.save_button)
+tick_photo_title_keyboard.row(btn.back_button)
+
+tick_photo_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_price_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_price_keyboard.row(btn.save_button)
+tick_photo_price_keyboard.row(btn.back_button)
+
+tick_video_file_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_keyboard.row(btn.description_button, file_tick_button)
+tick_video_file_keyboard.row(btn.title_button, btn.price_button)
+tick_video_file_keyboard.row(btn.save_button)
+tick_video_file_keyboard.row(btn.back_button)
+
+tick_video_description_keyboard = InlineKeyboardMarkup()
+
+tick_video_description_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_description_keyboard.row(description_tick_button, btn.file_button)
+tick_video_description_keyboard.row(btn.title_button, btn.price_button)
+tick_video_description_keyboard.row(btn.save_button)
+tick_video_description_keyboard.row(btn.back_button)
+
+tick_video_title_keyboard = InlineKeyboardMarkup()
+
+tick_video_title_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_title_keyboard.row(btn.description_button, btn.file_button)
+tick_video_title_keyboard.row(title_tick_button, btn.price_button)
+tick_video_title_keyboard.row(btn.save_button)
+tick_video_title_keyboard.row(btn.back_button)
+
+tick_video_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_price_keyboard.row(btn.description_button, btn.file_button)
+tick_video_price_keyboard.row(btn.title_button, price_tick_button)
+tick_video_price_keyboard.row(btn.save_button)
+tick_video_price_keyboard.row(btn.back_button)
+
+tick_file_description_keyboard = InlineKeyboardMarkup()
+
+tick_file_description_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_description_keyboard.row(description_tick_button, file_tick_button)
+tick_file_description_keyboard.row(btn.title_button, btn.price_button)
+tick_file_description_keyboard.row(btn.save_button)
+tick_file_description_keyboard.row(btn.back_button)
+
+tick_file_title_keyboard = InlineKeyboardMarkup()
+
+tick_file_title_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_title_keyboard.row(btn.description_button, file_tick_button)
+tick_file_title_keyboard.row(title_tick_button, btn.price_button)
+tick_file_title_keyboard.row(btn.save_button)
+tick_file_title_keyboard.row(btn.back_button)
+
+tick_file_price_keyboard = InlineKeyboardMarkup()
+
+tick_file_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_price_keyboard.row(btn.description_button, file_tick_button)
+tick_file_price_keyboard.row(btn.title_button, price_tick_button)
+tick_file_price_keyboard.row(btn.save_button)
+tick_file_price_keyboard.row(btn.back_button)
+
+tick_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_description_title_keyboard.row(btn.photo_button, btn.video_button)
+tick_description_title_keyboard.row(description_tick_button, btn.file_button)
+tick_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_description_title_keyboard.row(btn.save_button)
+tick_description_title_keyboard.row(btn.back_button)
+
+tick_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_description_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_description_price_keyboard.row(description_tick_button, btn.file_button)
+tick_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_description_price_keyboard.row(btn.save_button)
+tick_description_price_keyboard.row(btn.back_button)
+
+tick_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_title_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_title_price_keyboard.row(btn.description_button, btn.file_button)
+tick_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_title_price_keyboard.row(btn.save_button)
+tick_title_price_keyboard.row(btn.back_button)
+
+tick_photo_video_file_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_video_file_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_video_file_keyboard.row(btn.save_button)
+tick_photo_video_file_keyboard.row(btn.back_button)
+
+tick_photo_video_description_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_description_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_description_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_video_description_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_video_description_keyboard.row(btn.save_button)
+tick_photo_video_description_keyboard.row(btn.back_button)
+
+tick_photo_video_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_title_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_title_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_video_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_video_title_keyboard.row(btn.save_button)
+tick_photo_video_title_keyboard.row(btn.back_button)
+
+tick_photo_video_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_price_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_video_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_video_price_keyboard.row(btn.save_button)
+tick_photo_video_price_keyboard.row(btn.back_button)
+
+tick_photo_file_description_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_description_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_description_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_file_description_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_file_description_keyboard.row(btn.save_button)
+tick_photo_file_description_keyboard.row(btn.back_button)
+
+tick_photo_file_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_title_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_title_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_file_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_file_title_keyboard.row(btn.save_button)
+tick_photo_file_title_keyboard.row(btn.back_button)
+
+tick_photo_file_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_price_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_file_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_file_price_keyboard.row(btn.save_button)
+tick_photo_file_price_keyboard.row(btn.back_button)
+
+tick_photo_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_description_title_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_description_title_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_description_title_keyboard.row(btn.save_button)
+tick_photo_description_title_keyboard.row(btn.back_button)
+
+tick_photo_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_description_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_description_price_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_description_price_keyboard.row(btn.save_button)
+tick_photo_description_price_keyboard.row(btn.back_button)
+
+tick_photo_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_title_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_title_price_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_title_price_keyboard.row(btn.save_button)
+tick_photo_title_price_keyboard.row(btn.back_button)
+
+tick_video_file_description_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_description_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_description_keyboard.row(description_tick_button, file_tick_button)
+tick_video_file_description_keyboard.row(btn.title_button, btn.price_button)
+tick_video_file_description_keyboard.row(btn.save_button)
+tick_video_file_description_keyboard.row(btn.back_button)
+
+tick_video_file_title_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_title_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_title_keyboard.row(btn.description_button, file_tick_button)
+tick_video_file_title_keyboard.row(title_tick_button, btn.price_button)
+tick_video_file_title_keyboard.row(btn.save_button)
+tick_video_file_title_keyboard.row(btn.back_button)
+
+tick_video_file_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_price_keyboard.row(btn.description_button, file_tick_button)
+tick_video_file_price_keyboard.row(btn.title_button, price_tick_button)
+tick_video_file_price_keyboard.row(btn.save_button)
+tick_video_file_price_keyboard.row(btn.back_button)
+
+tick_video_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_video_description_title_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_description_title_keyboard.row(description_tick_button, btn.file_button)
+tick_video_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_video_description_title_keyboard.row(btn.save_button)
+tick_video_description_title_keyboard.row(btn.back_button)
+
+tick_video_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_description_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_description_price_keyboard.row(description_tick_button, btn.file_button)
+tick_video_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_video_description_price_keyboard.row(btn.save_button)
+tick_video_description_price_keyboard.row(btn.back_button)
+
+tick_video_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_title_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_title_price_keyboard.row(btn.description_button, btn.file_button)
+tick_video_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_video_title_price_keyboard.row(btn.save_button)
+tick_video_title_price_keyboard.row(btn.back_button)
+
+tick_file_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_file_description_title_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_description_title_keyboard.row(description_tick_button, file_tick_button)
+tick_file_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_file_description_title_keyboard.row(btn.save_button)
+tick_file_description_title_keyboard.row(btn.back_button)
+
+tick_file_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_file_description_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_description_price_keyboard.row(description_tick_button, file_tick_button)
+tick_file_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_file_description_price_keyboard.row(btn.save_button)
+tick_file_description_price_keyboard.row(btn.back_button)
+
+tick_file_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_file_title_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_title_price_keyboard.row(btn.description_button, file_tick_button)
+tick_file_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_file_title_price_keyboard.row(btn.save_button)
+tick_file_title_price_keyboard.row(btn.back_button)
+
+tick_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_description_title_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_description_title_price_keyboard.row(description_tick_button, btn.file_button)
+tick_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_description_title_price_keyboard.row(btn.save_button)
+tick_description_title_price_keyboard.row(btn.back_button)
+
+tick_photo_video_file_description_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_description_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_description_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_video_file_description_keyboard.row(btn.title_button, btn.price_button)
+tick_photo_video_file_description_keyboard.row(btn.save_button)
+tick_photo_video_file_description_keyboard.row(btn.back_button)
+
+tick_photo_video_file_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_title_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_title_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_video_file_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_video_file_title_keyboard.row(btn.save_button)
+tick_photo_video_file_title_keyboard.row(btn.back_button)
+
+tick_photo_video_file_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_price_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_video_file_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_video_file_price_keyboard.row(btn.save_button)
+tick_photo_video_file_price_keyboard.row(btn.back_button)
+
+tick_photo_video_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_description_title_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_description_title_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_video_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_video_description_title_keyboard.row(btn.save_button)
+tick_photo_video_description_title_keyboard.row(btn.back_button)
+
+tick_photo_video_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_description_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_description_price_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_video_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_video_description_price_keyboard.row(btn.save_button)
+tick_photo_video_description_price_keyboard.row(btn.back_button)
+
+tick_photo_video_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_title_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_title_price_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_video_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_video_title_price_keyboard.row(btn.save_button)
+tick_photo_video_title_price_keyboard.row(btn.back_button)
+
+tick_photo_file_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_description_title_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_description_title_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_file_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_file_description_title_keyboard.row(btn.save_button)
+tick_photo_file_description_title_keyboard.row(btn.back_button)
+
+tick_photo_file_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_description_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_description_price_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_file_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_file_description_price_keyboard.row(btn.save_button)
+tick_photo_file_description_price_keyboard.row(btn.back_button)
+
+tick_photo_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_description_title_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_description_title_price_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_description_title_price_keyboard.row(btn.save_button)
+tick_photo_description_title_price_keyboard.row(btn.back_button)
+
+tick_photo_file_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_title_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_title_price_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_file_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_file_title_price_keyboard.row(btn.save_button)
+tick_photo_file_title_price_keyboard.row(btn.back_button)
+
+tick_photo_video_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_title_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_title_price_keyboard.row(btn.description_button, btn.file_button)
+tick_photo_video_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_video_title_price_keyboard.row(btn.save_button)
+tick_photo_video_title_price_keyboard.row(btn.back_button)
+
+tick_video_file_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_description_title_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_description_title_keyboard.row(description_tick_button, file_tick_button)
+tick_video_file_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_video_file_description_title_keyboard.row(btn.save_button)
+tick_video_file_description_title_keyboard.row(btn.back_button)
+
+tick_video_file_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_description_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_description_price_keyboard.row(description_tick_button, file_tick_button)
+tick_video_file_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_video_file_description_price_keyboard.row(btn.save_button)
+tick_video_file_description_price_keyboard.row(btn.back_button)
+
+tick_video_file_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_title_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_title_price_keyboard.row(btn.description_button, file_tick_button)
+tick_video_file_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_video_file_title_price_keyboard.row(btn.save_button)
+tick_video_file_title_price_keyboard.row(btn.back_button)
+
+tick_video_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_description_title_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_description_title_price_keyboard.row(description_tick_button, btn.file_button)
+tick_video_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_video_description_title_price_keyboard.row(btn.save_button)
+tick_video_description_title_price_keyboard.row(btn.back_button)
+
+tick_file_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_file_description_title_price_keyboard.row(btn.photo_button, btn.video_button)
+tick_file_description_title_price_keyboard.row(description_tick_button, file_tick_button)
+tick_file_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_file_description_title_price_keyboard.row(btn.save_button)
+tick_file_description_title_price_keyboard.row(btn.back_button)
+
+tick_photo_video_file_description_title_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_description_title_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_description_title_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_video_file_description_title_keyboard.row(title_tick_button, btn.price_button)
+tick_photo_video_file_description_title_keyboard.row(btn.save_button)
+tick_photo_video_file_description_title_keyboard.row(btn.back_button)
+
+tick_photo_video_file_description_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_description_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_description_price_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_video_file_description_price_keyboard.row(btn.title_button, price_tick_button)
+tick_photo_video_file_description_price_keyboard.row(btn.save_button)
+tick_photo_video_file_description_price_keyboard.row(btn.back_button)
+
+tick_photo_video_file_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_file_title_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_file_title_price_keyboard.row(btn.description_button, file_tick_button)
+tick_photo_video_file_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_video_file_title_price_keyboard.row(btn.save_button)
+tick_photo_video_file_title_price_keyboard.row(btn.back_button)
+
+tick_photo_video_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_video_description_title_price_keyboard.row(photo_tick_button, video_tick_button)
+tick_photo_video_description_title_price_keyboard.row(description_tick_button, btn.file_button)
+tick_photo_video_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_video_description_title_price_keyboard.row(btn.save_button)
+tick_photo_video_description_title_price_keyboard.row(btn.back_button)
+
+tick_photo_file_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_photo_file_description_title_price_keyboard.row(photo_tick_button, btn.video_button)
+tick_photo_file_description_title_price_keyboard.row(description_tick_button, file_tick_button)
+tick_photo_file_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_photo_file_description_title_price_keyboard.row(btn.save_button)
+tick_photo_file_description_title_price_keyboard.row(btn.back_button)
+
+tick_video_file_description_title_price_keyboard = InlineKeyboardMarkup()
+
+tick_video_file_description_title_price_keyboard.row(btn.photo_button, video_tick_button)
+tick_video_file_description_title_price_keyboard.row(description_tick_button, file_tick_button)
+tick_video_file_description_title_price_keyboard.row(title_tick_button, price_tick_button)
+tick_video_file_description_title_price_keyboard.row(btn.save_button)
+tick_video_file_description_title_price_keyboard.row(btn.back_button)
+
+tick_all_keyboard = InlineKeyboardMarkup()
+
+tick_all_keyboard.row(photo_tick_button, video_tick_button)
+tick_all_keyboard.row(description_tick_button, file_tick_button)
+tick_all_keyboard.row(title_tick_button, price_tick_button)
+tick_all_keyboard.row(btn.save_button)
+tick_all_keyboard.row(btn.back_button)
